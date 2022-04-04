@@ -1,0 +1,1069 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 1170px;
+}
+#scroll{
+    width: 100%;
+    height: 500px;
+}
+/* ############################### all common css end #################################### */
+
+
+
+/* ############################## banner and topbar start ######################################### */
+#fullbanner{
+    width: 100%;
+    height: 1025px;
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#fullbanner::after{
+   position: absolute;
+   content: '';
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.548);
+}
+.bannercontainer{
+    height: 100%;
+    position: relative;
+    width: 1170px;
+}
+
+.topbar{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    z-index: 99999999;
+}
+.topbar ul li{
+    display: inline-block;
+    padding-left: 30px;
+    
+}
+.topbar ul li a{
+    color: white;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+} 
+.topbar ul li a:hover{
+    color: #998675;
+    border-bottom: 1px solid #998675;
+}
+
+.banner{
+    width: 100%;
+    height: 885px;
+    position: absolute;
+    bottom: 0;
+    z-index: 8;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 25pt;
+    color: #fff;
+}
+.banner h1{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 15px;
+    font-size: 40pt;
+    color: #fff;
+}
+.banner p{
+    font-family: 'Montserrat', sans-serif;
+    width: 599px;
+    margin-top: 15px;
+    color: #fff;
+}
+.banner #bannerbtn{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 85px;
+    font-weight: 500;
+}
+#bannerbtn a{
+    padding: 15px 40px;
+    background-color: #998675;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom: 2px solid #776758;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+#bannerbtn a:hover{
+    background-color: #fff;
+    color: #998675;
+    border-bottom: 2px solid gainsboro;
+}
+/* ############################## banner and topbar end ######################################### */
+
+/* #################################### our services start ######################################## */
+#ourservices{
+    width: 100%;
+    height: 370px;
+}
+.servicecontainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.serviceinner{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.serviceinner i{
+      font-size: 50px;
+      color: #555555;
+      transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.serviceinner h2{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 8px;
+    color: #555555;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.serviceinner p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 8px;
+    color: #8c8c8c;
+}
+.serviceinner .servicedash{
+    width: 80px;
+    height: 3px;
+    background-color: #f1eee9;
+    margin-top: 21px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.serviceinner:hover{
+    cursor: pointer;
+}
+.serviceinner:hover i{
+    color: #c7b299;
+    
+}
+.serviceinner:hover h2{
+    color:#c7b299;
+}
+.serviceinner:hover .servicedash{
+    background-color: #c7b299;
+}
+
+/* #################################### our services end ######################################## */
+
+/* ################################## your deal start ########################################### */
+#yourdeal{
+    width: 100%;
+    background-image: url(../images/yourdeal-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.yourdealcontainer{
+    height: 100%;
+    display: flex;
+   align-items: center;
+    flex-direction: column;
+}
+.yourdealcontainer h1{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 61px;
+    color: #555555;
+    font-size: 25px;
+}
+.yourdealcontainer p{
+    width: 760px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #8c8c8c;
+}
+/* ################################## your deal end ########################################### */
+
+/* ################################## gradiant part start ###################################### */
+#gradiantbg{
+    height: 150px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(33,27,25,1) 19%, rgba(78,52,39,1) 79%);
+}
+.gradiantcontainer {
+    height: 100%;
+    position: relative;
+}
+.gradiantcontainer h1{
+    color: #fff;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    top: 56px;
+    font-weight: 400;
+}
+.gradiantcontainer p{
+    color: #615855;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    top: 89px;
+}
+.gradiantcontainer a{
+    color: #fff;
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    right: 0;
+    top: 52px;
+    padding: 15px 40px;
+    background-color: #998675;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom: 2px solid #776758;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    font-weight: 600;
+}
+.gradiantcontainer a:hover{
+    background-color: #fff;
+    color: #998675;
+    border-bottom: 2px solid gainsboro;
+}
+/* ################################## gradiant part end ###################################### */
+
+/*  #################################### our latest project start ################################## */
+#latestproject{
+    width: 100%;
+    height: 1160px;
+}
+.projectcontainer{
+    height: 100%;
+}
+.projectbtns{
+    width: 100%;
+    height: 288px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.projectbtns h1{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 80px;
+    color: #555555;
+    font-size: 25px;
+}    
+.projectbtns p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    width: 756px;
+    margin-top: 20px;
+    color: #8c8c8c;
+}
+.projectbtns ul{
+    margin-top: 40px;
+}
+.projectbtns ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.projectbtns ul li a{
+    padding: 10px 30px;
+    border: 1px solid #8c8c8c;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}   
+.projectbtns ul li a:hover{
+    background-color: #998675;
+    border: 1px solid #998675;
+    color: #fff;
+}
+
+/* project img */
+
+.projectimg{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.projectimginner{
+    width: 368px;
+    height: 330px;
+    position: relative;
+}
+.projectimginner:hover .projectimginnerlabel{
+    background-color: #362f2d;
+} 
+.projectimginner:hover h1{
+    color: #fff;
+}
+.projectimginner:hover p{
+    color: #c7b299;
+}
+.projectimginner:hover .projectovly{
+    height: 236px;
+    opacity: 1;
+} 
+.projectimginner:hover .labeldeg{
+    background-color: #362f2d;
+} 
+.projectimginner img{
+    height: auto;
+    width: 100%;
+}
+.projectimginnerlabel{
+    position: absolute;
+    width: 100%;
+    height: 94px;
+    bottom: 0;
+    background-color: #fbfaf8;
+    z-index: 99;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.projectimginnerlabel h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #c7b299;
+}
+.projectimginnerlabel p{
+    font-family: 'Montserrat', sans-serif;
+    color: #d1d1d1;
+    margin-left: 20px;
+}
+.labeldeg{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    left: 27px;
+    top: 221px;
+    background-color: #fbfaf8;
+    z-index: 7;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.projectovly{
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction:row ;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.projectovly i{
+    color: #fff;
+    font-size: 25px;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.projectovly i:hover{
+    color: #c7b299;
+    cursor: pointer;
+}
+
+.projectbutton{
+    text-align: center;
+    margin-top: 84px;
+}
+
+.projectbutton a{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px 40px;
+    background-color: #998675;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-bottom: 2px solid #776758;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    font-weight: 600;
+}
+.projectbutton a:hover{
+    background-color: #fff;
+    color: #998675;
+    border-bottom: 2px solid gainsboro;
+    cursor: pointer;
+}
+/*  #################################### our latest project end ################################## */
+
+/* ################################### video start ##################################### */
+#video{
+    height: 500px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* ################################### video end ####################################### */
+
+/* ###################################exellent for mobile device start  ######################### */
+#mobiledevice{
+    width: 100%;
+    height: 700px;
+}
+.mobilecontainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.mobileonhand{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.mobileonhand img{
+    position: absolute;
+    bottom: 0;
+}
+.mobiledevicetxt{
+    width: 60%;
+    height: 100%;
+}
+.mobiledevicetxt h1{
+    margin-top: 196px;
+    font-family: 'Raleway', sans-serif;
+    color: #555555;
+}
+.mobiledevicetxt p{
+    margin-top: 20px;
+    color: #8c8c8c;
+    font-family: 'Montserrat', sans-serif;
+    width: 678px;
+}
+.mobiledevicetxt ul{
+    margin-top: 50px;
+    margin-left: 85px;
+}
+.mobiledevicetxt ul li {
+    margin-top: 17px;
+    color: #555555;
+    font-family: 'Montserrat', sans-serif;
+}
+.mobiledevicetxt ul li a{
+    padding: 6px 11px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #c7b299;
+    color: #fff;
+    transition: 0.3s ease-in;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -ms-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+}
+.mobiledevicetxt ul li a:hover{
+    background-color: #fff;
+    color: #c7b299;
+}
+/* ###################################exellent for mobile device end  ######################### */
+
+/* ######################### counting part start ####################################### */
+#counting{
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(90deg, rgba(33,27,25,1) 19%, rgba(78,52,39,1) 79%);
+}
+.countingcontainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.countinginner{
+    width: 18%;
+    height: 100%;
+  
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+.countinginner h1{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.countinginner p{
+    font-family: 'Montserrat', sans-serif;
+    color: #c7b299;
+    margin-top: 10px; 
+}
+.cdash{
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+/* ######################### counting part end ####################################### */
+
+/* ###################################### recent post start #################################  */
+#recentpost{
+    height: 750px;
+    width: 100%;
+}
+.postcontainer {
+    height: 100%;
+    
+}
+.postheading{
+    width: 100%;
+    height: 215px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.postheading h1{
+    font-family: 'Raleway', sans-serif;
+    color: #555555;
+    font-size: 25px;
+}
+.postheading p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    width: 756px;
+    margin-top: 20px;
+    color: #8c8c8c;
+    text-align: center;
+}
+
+/* main post */
+ 
+.mainpost{
+    width: 100%;
+    height: 395px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.mainpostinner{
+    width: 32%;
+    height: 100%;
+    background-color: dodgerblue;
+    position: relative;
+}
+
+.mainpostinner img{
+    width: 100%;
+    height: auto;
+}
+.recenttxt{
+    position: absolute;
+    background-color: #fff;
+    height: 172px;
+    width: 100%;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.recenttxt h1{
+    font-family: 'Raleway', sans-serif;
+    color: #555555;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.3s ease-in-out;
+
+}
+.recenttxt p{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #8c8c8c;
+    transition: 0.3s ease-in-out;
+
+}
+#a{
+    margin-top: 20px;
+}
+#a a{
+    font-family: 'Montserrat', sans-serif;
+    color: #c7b299;
+}
+.recentovly{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.616);
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 223px;
+    z-index: 9;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+
+}
+.calender{
+    position: absolute;
+    width: 60px;
+    height: 75px;
+    top: 20px;
+    left: 20px;
+    background-color: burlywood;
+    z-index: 10;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transform: translateY(-150%);
+    -webkit-transform: translateY(-150%);
+    -moz-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+    -o-transform: translateY(-150%);
+    animation: calender 0.3s ease-in-out forwards;
+    -webkit-animation: calender 0.3s ease-in-out forwards;
+}
+@keyframes calender{
+    100%{
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+}
+}
+
+.calenderupper{
+    height: 60%;
+    width: 100%;
+    background-color: #363636;
+    border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.calenderupper h1{
+   font-weight: 400;
+   font-family: 'Montserrat', sans-serif;
+   color: #fff;
+   
+}
+.calenderlower{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.calenderlower h3{
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+}
+
+
+.mainpostinner:hover .recenttxt{
+     background-color: #362f2d;
+}
+.mainpostinner:hover .recenttxt h1{
+    color: #b4a18b;
+}
+.mainpostinner:hover .recenttxt p{
+    color: #fff;
+    
+}
+.mainpostinner:hover .recentovly{
+    width: 100%;
+    opacity: 1;
+}
+.mainpostinner:hover .calenderupper{
+    background-color:#c7b299 ;
+}
+.mainpostinner:hover .calenderlower{
+    background-color: #a48d72;
+}
+.postcontainer #lr{
+    margin-top: 40px;
+    text-align: center;
+}
+.postcontainer #lr a i{
+    color: #d4d4d4;
+    font-size: 30px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+.postcontainer #lr a i:hover{
+    color: #cab69e;
+}
+/* ###################################### recent post end #################################  */
+
+
+/*  ############################### hill background start #################################### */
+#hillbg{
+    width: 100%;
+    height: 480px;
+    background-image: url(../images/hill-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#hillbg::before{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.678);
+}
+.hillcontainer{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hillinner{
+    width: 23%;
+    height: 100%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  ############################### hill background end #################################### */
+
+/* ##################################### footer start ############################# */
+#footer{
+    width: 100%;
+    height: 500px;
+    background-color: #191919;
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+.footerconatiner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.footinner{
+    width: 23%;
+    height: 100%;
+}
+.foot1 img{
+    margin-top: 80px;
+}
+.foot1 p{
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    margin-top: 25px;
+}
+#foot1btn{
+    margin-top: 25px;
+}
+#foot1btn a{
+    color: #fff;
+}
+.foot2{
+    position: relative;
+}
+.foot2 h1{
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.foot2 h5{
+    margin-top: 37px;
+    font-family: 'Montserrat', sans-serif;
+    color: #363636;
+    font-weight: 400;
+}
+.foot2 p{
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #515151;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #515151;
+}
+#twoline{
+    margin-top: 20px;
+    color: #fff;
+}
+#twolinetxt{
+    margin-top: 10px;
+    color: #c7b299;
+}
+#threeline{
+    margin-top: 20px;
+    color: #363636;
+}
+#threelinetxt{
+    margin-top: 10px;
+    color: #515151;
+    border-bottom: none;
+}
+.foot3 h1{
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.foot3 p a{
+    color: #00bff3;
+}
+.foot3 p{
+    margin-top: 37px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+}
+.foot3 h5{
+    font-weight: 400;
+    color: #363636;
+    border-bottom: 1px solid #515151;
+    padding-bottom: 11px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+#lastline a{
+    color: #fff;
+}
+#lastlinetxt{
+    border-bottom: none;
+}
+.foot4 h1{
+    margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.foot4img{
+    width: 100%;
+    height: 245.7px;
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footimginner{
+    width: 130px;
+    height: 113px;
+    position: relative;
+}
+.footimginner img{
+    width: 100%;
+    height: 100%;
+}
+.footovly{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    left: 0;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footovly a i{
+    font-size: 35px;
+    color: #fff;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+.footovly a i:hover{
+     color: #a48d72;
+
+}
+.footimginner:hover .footovly{
+    opacity: 1;
+    width: 100%;
+}
+/* ##################################### footer end ############################# */
+
+/* ############################ copy start #######################################  */
+#copy{
+    height: 110px;
+    width: 100%;
+    background-color: #111111;
+}
+.copyconatiner{
+    height: 100%;
+    position: relative;
+}
+.copyinner1{
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    left: 0;
+    
+}
+.copyinner1 p{
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    line-height: 110px;
+}
+#wx{
+    color: #fff;
+}
+#faq{
+    color: #c7b299;
+}
+.copyinner2{
+    position: absolute;
+    height: 100%;
+    width: 37%;
+    right: 0;
+}
+.copyinner2 p{
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    line-height: 110px;
+}
+.copyinner2 p a{
+    color: #fff;
+}
+
+/* ############################ copy end #######################################  */
